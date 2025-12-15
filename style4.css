@@ -6,18 +6,20 @@
 }
 
 body {
- height: 100vh;
- overflow-y: hidden;
- background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('./asset/img/exx.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-a{
+a {
     text-decoration: none;
 }
-video {
-    width: 100%;
-}
-.wrapper{
+
+.wrapper {
     width: 420px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
@@ -26,25 +28,22 @@ video {
     color: #fff;
     border-radius: 10px;
     padding: 30px 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    
+    margin-left: 5px;
 }
 
-.wrapper h1{
+.wrapper h1 {
     font-size: 36px;
     text-align: center;
 }
-.wrapper .input-box{
+
+.wrapper .input-box {
     position: relative;
     width: 100%;
     height: 50px;
     margin: 30px 0;
 }
 
-.input-box input{
+.input-box input {
     width: 100%;
     height: 100%;
     background: transparent;
@@ -57,38 +56,41 @@ video {
     padding: 20px 45px 20px 20px;
 }
 
-.input-box input{
+.input-box input {
     color: #fff;
 }
 
-.input-box i{
+.input-box i {
     position: absolute;
     right: 19px;
     top: 15px;
-    
+
     transform: translate(-50%);
     font-size: 20px;
 }
 
-.wrapper .remember-forgot{
+.wrapper .remember-forgot {
     display: flex;
     justify-content: space-between;
     font-size: 14.5px;
     margin: -15px 0 15px;
 }
-.remember-forgot label inpute{
+
+.remember-forgot label inpute {
     accent-color: #fff;
     margin-right: 3px;
 }
+
 .remember-forgot a {
     color: #fff;
     text-decoration: none;
 }
 
-.remember-forgot a:hover{
+.remember-forgot a:hover {
     text-decoration: underline;
 }
-.btn{
+
+.btn {
     padding: 0.7rem 1.4rem;
     background: red;
     color: white;
@@ -96,20 +98,42 @@ video {
     border-radius: 0.5rem;
     margin-left: 120px;
 
-} 
+}
 
-.register-link{
+.register-link {
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
 }
 
-.register-link p a{
+.register-link p a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
 }
 
-.register-link p a:hover{
+.register-link p a:hover {
     text-decoration: underline;
+}
+
+@media(max-width:472px) {
+    .btn {
+        padding: 0.7rem 1.4rem;
+        background: red;
+        color: white;
+        font-weight: 500;
+        border-radius: 0.5rem;
+        margin-left: 106px;
+    }
+}
+
+@media(max-width:774px) {
+    .btn {
+        padding: 0.7rem 1.4rem;
+        background: red;
+        color: white;
+        font-weight: 500;
+        border-radius: 0.5rem;
+        margin-left: 118px;
+    }
 }
