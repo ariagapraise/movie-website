@@ -46,3 +46,25 @@ popupOverlay.onclick = (e) => {
     }
 };
 
+
+function openVideo(videoPath) {
+    const popup = document.getElementById("videoPopup");
+    const video = document.getElementById("popupVideo");
+    const source = document.getElementById("videoSource");
+
+    source.src = videoPath;
+    video.load();
+    popup.style.display = "flex";
+    video.play();
+}
+
+function closeVideo() {
+    const popup = document.getElementById("videoPopup");
+    const video = document.getElementById("popupVideo");
+
+    video.pause();
+    popup.style.display = "none";
+}
+
+
+
