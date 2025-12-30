@@ -22,5 +22,27 @@ var swiper = new Swiper(".home", {
         el: ".swiper-pagination",
         clickable: true,
     },
-    
+
 });
+
+
+const popupOverlay = document.getElementById("popup-overlay");
+const closeBtn = document.getElementById("close-btn");
+
+// Show popup after 3 seconds
+setTimeout(() => {
+    popupOverlay.style.display = "flex";
+}, 2000);
+
+// Close popup
+closeBtn.onclick = () => {
+    popupOverlay.style.display = "none";
+};
+
+// Close popup when clicking outside
+popupOverlay.onclick = (e) => {
+    if (e.target === popupOverlay) {
+        popupOverlay.style.display = "none";
+    }
+};
+

@@ -127,6 +127,8 @@ header .shadow {
     border-bottom-left-radius: 3rem ;
     border-bottom-right-radius: rem;
     object-position: center;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
     z-index: -1;
 }
 
@@ -277,8 +279,8 @@ header .shadow {
     margin-right: none;
     display: flex;
     justify-content: space-between;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 20rem;
+    padding-right: 5rem;
 }
 
 .social {
@@ -313,6 +315,59 @@ header .shadow {
     width: 100%;
     height: 60vh;
 }
+
+
+#popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+#popup {
+  background: #000000;
+  padding: 25px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  animation: shake 0.5s ease-in-out 3;
+}
+
+#popup h2 {
+  color:var(--main-color);
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  50% { transform: translateX(2px); }
+  75% { transform: translateX(-2px); }
+  100% { transform: translateX(0); }
+
+}
+#popup-btn {
+  background: var(--main-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
 
 @media(max-width:1080px) {
     .home-text {
@@ -418,6 +473,8 @@ header .shadow {
         flex-direction: column;
         align-items: center;
         row-gap: 1rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
         
     }
 
