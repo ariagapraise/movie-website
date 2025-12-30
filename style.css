@@ -451,8 +451,16 @@ header .shadow {
         height: 109vh;
     }
 
+    .home-text{
+        align-items: center;
+        padding-right: 50rem;
+        /* margin-left: 10rem; */
+        width: 300%;
+        
+    }
+
     .home-text h1 {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     .btn {
