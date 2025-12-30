@@ -124,7 +124,7 @@ header .shadow {
     width: 100%;
     height: 109vh;
     object-fit: cover;
-    border-bottom-left-radius: 3rem ;
+    border-bottom-left-radius: 3rem;
     border-bottom-right-radius: rem;
     object-position: center;
     border-bottom-left-radius: 3rem;
@@ -318,83 +318,99 @@ header .shadow {
 
 
 #popup-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
 #popup {
-  background: #000000;
-  padding: 25px;
-  width: 300px;
-  text-align: center;
-  border-radius: 10px;
-  position: relative;
-  animation: shake 0.5s ease-in-out 3;
+    background: #000000;
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    animation: shake 0.5s ease-in-out 3;
 }
 
 #popup h2 {
-  color:var(--main-color);
+    color: var(--main-color);
 }
+
 @keyframes shake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-2px); }
-  50% { transform: translateX(2px); }
-  75% { transform: translateX(-2px); }
-  100% { transform: translateX(0); }
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-2px);
+    }
+
+    50% {
+        transform: translateX(2px);
+    }
+
+    75% {
+        transform: translateX(-2px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 
 }
+
 #popup-btn {
-  background: var(--main-color);
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 5px;
+    background: var(--main-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 #close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 20px;
-  cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 /* VIDEO POPUP */
 .video-popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.85);
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
 }
 
 .video-popup video {
-  width: 80%;
-  max-width: 800px;
-  border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
 }
 
 .close-btn {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 40px;
-  color: white;
-  cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
 }
 
 
@@ -451,12 +467,12 @@ header .shadow {
         height: 109vh;
     }
 
-    .home-text{
+    .home-text {
         align-items: center;
         padding-right: 50rem;
         /* margin-left: 10rem; */
         width: 300%;
-        
+
     }
 
     .home-text h1 {
@@ -488,7 +504,7 @@ header .shadow {
         row-gap: 1rem;
         padding-left: 5rem;
         padding-right: 5rem;
-        
+
     }
 
     @media(max-width:370px) {
@@ -498,6 +514,15 @@ header .shadow {
 
         .home-text h1 {
             font-size: 1.7rem;
+        }
+
+
+        .home-text {
+            align-items: center;
+            padding-right: 50rem;
+            /* margin-left: 10rem; */
+            width: 300%;
+
         }
 
         .play {
