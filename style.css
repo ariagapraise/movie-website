@@ -91,6 +91,171 @@ header .shadow {
     width: 100%;
 }
 
+/* popup login/signup */
+
+/* .form-popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 720px;
+    width: 100%;
+    background: #fff;
+    border: 2px solid #fff;
+    transform: translate(-50%, -50%);
+}
+
+.form
+
+.form-popup .form-box{
+    display: flex;
+}
+
+.form-box .form-details {
+    max-width: 330px; 
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("./asset/img/gb.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.form-box .form-details p{
+    color: #ffffff;
+}
+
+.form-box h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.form-box .form-content {
+    width: 100%;
+    padding: 35px;
+}
+
+/* .form-box .form-content label{
+    color: #000000;
+} */
+/* form .input-field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+form .input-field input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 15px;
+    font: size 0.95em;
+    border-radius: 3px;
+    border: 1px solid #717171;
+}
+
+.input-field input:focus{
+    border-color: #00bcd4;
+}
+
+.input-field input:is(:focus, :valid) {
+    padding: 16px 15px 0;
+}
+
+form .input-field label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color: #717171;
+    pointer-events: none ;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ label{
+    color: #00bcd4;
+    font-size: 0.75rem;
+    transform: translateY(-120%);
+}
+
+.form-box a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.form-box a:hover {
+    text-decoration: underline;
+}
+
+.form-box .forgot-pass{
+    display: inline-flex;
+    margin-top: 14px;
+    font-size: 0.95rem;
+}
+
+form button {
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 14px 0;
+    border-radius: 3px;
+    margin: 25px 0;
+    color: #fff;
+    cursor: pointer;
+    background: #00bcd4;
+    transition: 0.2s ease;
+}
+
+form button:hover {
+    background: #0097a7;
+}
+
+.form-box .bottom-link{
+    text-align: center;
+} */ 
+ 
+
+#preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;     /* page background while loading */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.6s ease;  /* fade effect */
+}
+
+.loading-text{
+  color: rgb(255, 255, 255);     /* red text */
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  animation: blink 1s infinite;
+}
+
+
+@keyframes blink{
+  0%{ opacity: 0.3; }
+  50%{ opacity: 1; }
+  100%{ opacity: 0.3; }
+}
+
+/* hide after fade */
+#preloader.hide{
+  opacity: 0;
+  pointer-events: none;
+}
+
+
 #bars-icon {
     font-size: 24px;
     cursor: pointer;
@@ -280,7 +445,7 @@ header .shadow {
     display: flex;
     justify-content: space-between;
     padding-left: 20rem;
-    padding-right: 5rem;
+    padding-right: 3rem;
 }
 
 .social {

@@ -32,7 +32,7 @@ const closeBtn = document.getElementById("close-btn");
 // Show popup after 3 seconds
 setTimeout(() => {
     popupOverlay.style.display = "flex";
-}, 2000);
+}, 5000);
 
 // Close popup
 closeBtn.onclick = () => {
@@ -65,6 +65,44 @@ function closeVideo() {
     video.pause();
     popup.style.display = "none";
 }
+
+
+document.getElementById("newsletter").addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("Form submitted successfully!");
+});
+
+
+
+const text = "Welcome to K-hub";
+const speed = 120; // typing speed
+let index = 0;
+
+function typeEffect() {
+    const el = document.querySelector(".loading-text");
+    if (index < text.length) {
+        el.textContent += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, speed);
+    } else {
+        // after typing finishes, fade out preloader
+        setTimeout(() => {
+            const pre = document.getElementById("preloader");
+            pre.classList.add("hide");
+            setTimeout(() => {
+                pre.style.display = "none";
+            }, 600);
+        }, 800);
+    }
+}
+
+window.addEventListener("load", typeEffect);
+
+
+
+
+
+
 
 
 
