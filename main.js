@@ -74,29 +74,41 @@ document.getElementById("newsletter").addEventListener("submit", function (e) {
 
 
 
-const text = "Welcome to K-hub";
-const speed = 120; // typing speed
-let index = 0;
+// const text = "Welcome to K-hub";
+// const speed = 120; // typing speed
+// let index = 0;
 
-function typeEffect() {
-    const el = document.querySelector(".loading-text");
-    if (index < text.length) {
-        el.textContent += text.charAt(index);
-        index++;
-        setTimeout(typeEffect, speed);
-    } else {
-        // after typing finishes, fade out preloader
-        setTimeout(() => {
-            const pre = document.getElementById("preloader");
-            pre.classList.add("hide");
-            setTimeout(() => {
-                pre.style.display = "none";
-            }, 600);
-        }, 800);
-    }
-}
+// function typeEffect() {
+//     const el = document.querySelector(".loading-text");
+//     if (index < text.length) {
+//         el.textContent += text.charAt(index);
+//         index++;
+//         setTimeout(typeEffect, speed);
+//     } else {
+//         // after typing finishes, fade out preloader
+//         setTimeout(() => {
+//             const pre = document.getElementById("preloader");
+//             pre.classList.add("hide");
+//             setTimeout(() => {
+//                 pre.style.display = "none";
+//             }, 600);
+//         }, 800);
+//     }
+// }
 
-window.addEventListener("load", typeEffect);
+// window.addEventListener("load", typeEffect);
+
+// 
+
+
+window.addEventListener("load", function () {
+    // keep loader for 3 seconds (3000ms)
+    setTimeout(function () {
+        document.getElementById("loader-wrapper").style.display = "none";
+    }, 2000);
+});
+
+
 
 
 

@@ -99,6 +99,7 @@ header {
     color: var(--bg-color);
     font-weight: 400;
     border-radius: 0.5rem;
+    
 }
 
 .btn:hover {
@@ -178,14 +179,19 @@ header {
     text-decoration: underline;
 }
 
-.btn {
+.btn1{
     padding: 0.7rem 1.4rem;
     background: red;
     color: white;
     font-weight: 500;
     border-radius: 0.5rem;
-    margin-left: 120px;
+    margin-left: 105px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
+.btn1:hover {
+    background: #fa1216;
 }
 
 .register-link {
